@@ -1,0 +1,169 @@
+/* CSS HEX
+--muted-teal: #75957cff;
+--ink-black: #0d1321ff;
+--papaya-whip: #fef1d7ff;
+--brandy: #923111ff;
+--dark-emerald: #00663aff; */
+
+/* fonts
+DM Serif Display
+DM Serif Text
+Roboto Mono */
+
+
+/* still a work in progress but has the requirements */
+
+body {
+    background-color: #75957cff;
+    color: #0d1321ff;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("images/background-rounded.jpg");
+    background-repeat: round;
+    max-height: 750px;
+}
+
+#container {
+    max-width: 1200px;
+    height: 750px;
+    min-width: 800px;
+    margin: auto;
+}
+
+#banner {
+    max-width: 1200px;
+    height: 250px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin: auto;
+    position: relative;
+}
+
+#banner h1 {
+    background-color: #fef1d7ff;
+}
+
+#banner h2 {
+    background-color: #fef1d7ff;
+
+}
+
+/* future revisions:  */
+
+/* I DONT KNOW WHY THE WHITE BACKGROUNDS ARE STILL SHOWING WHEN I MADE THEM TRANSPARENT AFKJHASHFJ */
+#cat {
+    position: absolute;
+    top: 50px;
+    right: 3em;
+    animation: rotate 3.5s ease-in-out infinite alternate;
+}
+
+#layingcat {
+    position: absolute;
+    top: 50px;
+    left: 3em;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-10deg);
+    }
+
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+#subheading {
+    max-width: 1200px;
+    height: 250px;
+    position: relative;
+}
+
+#subheading h2 {
+    font-size: 30px;
+    color: #0d1321ff;
+}
+
+main {
+    display: flex;
+    background-color: #fef1d7ff;
+    justify-self: center;
+    gap: 60px;
+    padding: 40px;
+    width: 900px;
+    border-style: double;
+    border-width: 1em;
+    border-color: orange;
+    border-radius: 2em;
+}
+
+main ul li {
+    list-style-type: none;
+    font-size: 16px;
+    padding: 10px;
+    background-color: whitesmoke;
+    line-height: 1.5em;
+}
+
+main ul {
+    padding-left: 0;
+}
+
+main h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+section h3 {
+    color: #00663aff;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+section ul li a {
+    color: #923111ff;
+}
+
+main ul li a {
+    text-decoration: underline 0.15em transparent;
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+main ul li a:hover {
+    text-decoration-color: #923111ff;
+    text-underline-offset: 0.4em;
+}
+
+footer {
+    margin-top: auto;
+    padding: 0;
+    color: #0d1321ff;
+    background-color: #fef1d7ff;
+    width: fit-content;
+}
+
+footer p {
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #0d1321ff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0d1321ff;
+}
+
+footer a:hover {
+    color: #923111ff;
+}
