@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 2</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+            padding: 50px;
+
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Experiment 2</h1>
+    <p id="output"></p>
+
+    <script>
+        //My program asks users to input their favorite color so that the background color of the page will change to that color.
+
+        const color = prompt("what's your favorite color?");
+
+        function makeMessage(favoriteColor) {
+            return "Check it out, " + favoriteColor + " is the background now!";
+        }
+
+        function updatePage(message, favoriteColor) {
+            document.getElementById("output").innerHTML = message;
+            document.body.style.backgroundColor = favoriteColor;
+        }
+
+        const message = makeMessage(color);
+        updatePage(message, color);
+
+    </script>
+
+</body>
+
+</html>
