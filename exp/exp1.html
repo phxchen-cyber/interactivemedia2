@@ -13,15 +13,20 @@
 
     <script>
 
+        // My program asks users to input the a sound that a dog or cat makes and if the user inputs the correct answer, the console will log "yes that's skibidi bop yes yes yes". If the user inputs the wrong answer, the console will log "no no no that's not funny do it again".
+
+        // sequence
         var selectedSound = prompt("What sounds do a dog or cat make?", "").toLowerCase();
-
-        if (selectedSound === "woof" || selectedSound === "bark" || selectedSound === "meow" || selectedSound === "mew") {
-            console.log("yes that's skibidi bop yes yes yes");
+        // loop
+        for (var i = 0; i < selectedSound.length; i++) {
+            // selection
+            if (selectedSound === "woof" || selectedSound === "bark" || selectedSound === "meow" || selectedSound === "mew") {
+                console.log("yes that's skibidi bop yes yes yes");
+            }
+            else {
+                console.log("no no no that's not funny do it again");
+            }
         }
-        else {
-            console.log("no no no that's not funny do it again");
-        }
-
 
     </script>
 
