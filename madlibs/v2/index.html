@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Note</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="layout">
+
+        <header class="page">
+            <div class="page-title">
+                <label>Travel Note</label>
+            </div>
+
+            <form id="madlib-form" class="forms-container">
+
+                <div class="madlib-box">
+                    <div class="input-group">
+                        <label for="verb1">Verb-ing:</label>
+                        <input type="text" id="verb1" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="adj1">Adjective:</label>
+                        <input type="text" id="adj1" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="food1">Food:</label>
+                        <input type="text" id="food1" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="food2">Food:</label>
+                        <input type="text" id="food2" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="drink">Drink:</label>
+                        <input type="text" id="drink" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="item">Item:</label>
+                        <input type="text" id="item" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="pluralNoun">Plural Noun:</label>
+                        <input type="text" id="pluralNoun" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="pluralNoun">Plural Noun:</label>
+                        <input type="text" id="pluralNoun2" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="actionverb">Action Verb-ing:</label>
+                        <input type="text" id="actionverb" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="adj2">Adjective:</label>
+                        <input type="text" id="adj2" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="pluralNoun3">Plural Noun:</label>
+                        <input type="text" id="pluralNoun3" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="artist">Artist:</label>
+                        <input type="text" id="artist" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="verb3">Verb-ing:</label>
+                        <input type="text" id="verb3" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>&nbsp;</label>
+                    <input type="submit" value="Submit" id="submit-btn">
+                </div>
+            </form>
+        </header>
+    </main>
+
+    <section id="overlay" class="hidden">
+        <div id="madlib-result">
+            <button id="close-btn">Done</button>
+            <article id="full-note">
+            </article>
+        </div>
+    </section>
+
+</body>
+
+</html>
