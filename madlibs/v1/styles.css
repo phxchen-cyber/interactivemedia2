@@ -1,0 +1,97 @@
+body {
+    font-family: "Roboto Mono", sans-serif;
+    color: black;
+    background-image: url("images/interior-bg.jpg");
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.page-title {
+    position: absolute;
+    top: 0px;
+    right: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    width: 460px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.forms-container {
+    position: absolute;
+    top: 40px;
+    right: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+
+.madlib-box {
+    background: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: black;
+}
+
+.input-group input[type="text"] {
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 0.8rem;
+    width: 85%;
+}
+
+input[type="text"]:focus {
+    border: 1px solid grey;
+    outline: solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#submit-btn {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 0.8rem;
+    align-self: center;
+    text-align: center;
+    width: 50%;
+    transition: all .3s ease-in-out;
+}
+
+#submit-btn:hover {
+    background-color: black;
+    color: whitesmoke;
+    border-color: orange;
+    cursor: pointer;
+}
