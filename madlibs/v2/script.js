@@ -50,5 +50,6 @@
 
     closeBtn.addEventListener('click', function () {
         overlay.className = 'hidden';
+        location.reload();
     });
 })();
