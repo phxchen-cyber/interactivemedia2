@@ -2,6 +2,16 @@
     "use strict";
     console.log("reading js");
 
+
+    const images = [
+        'images/interior-bg.jpg',
+        'images/interior-bg-2.jpg',
+        'images/pool-bg.jpg',
+    ];
+
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.body.style.backgroundImage = `url('${randomImage}')`;
+
     const madLibForm = document.querySelector('#madlib-form');
     const overlay = document.querySelector('#overlay');
     const fullNote = document.querySelector('#full-note');
