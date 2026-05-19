@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1 {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.layout {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    color: whitesmoke;
+}
+
+.camera-main {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.camera {
+    width: 400px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.camera:active {
+    transform: scale(0.9);
+}
+
+.photo {
+    position: absolute;
+
+    top: 380px;
+    left: 660px;
+
+    width: 120px;
+
+    opacity: 0;
+    transform: scale(0);
+
+    transition: all 0.6s ease;
+    z-index: 15;
+}
+
+.photo {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.lake {
+    top: 100px;
+    left: 120px;
+    width: 300px;
+}
+
+.apartment {
+    top: 430px;
+    left: 120px;
+    width: 300px;
+}
+
+.moped {
+    top: 100px;
+    left: 1070px;
+    width: 300px;
+}
+
+.street {
+    top: 430px;
+    left: 1070px;
+    width: 300px;
+}
