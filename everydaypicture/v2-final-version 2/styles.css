@@ -29,11 +29,10 @@ p {
     width: 100%;
     text-align: center;
     z-index: 10000;
-    /* pointer-events: none; */
     color: whitesmoke;
 }
 
-/* bag containers */
+/* camera containers */
 .camera-main {
     position: absolute;
     top: 430px;
