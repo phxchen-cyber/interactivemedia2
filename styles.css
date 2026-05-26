@@ -11,8 +11,6 @@ DM Serif Text
 Roboto Mono */
 
 
-/* still a work in progress but has the requirements */
-
 body {
     background-color: #75957cff;
     color: #0d1321ff;
@@ -54,9 +52,6 @@ body {
 
 }
 
-/* future revisions:  */
-
-/* I DONT KNOW WHY THE WHITE BACKGROUNDS ARE STILL SHOWING WHEN I MADE THEM TRANSPARENT AFKJHASHFJ */
 #cat {
     position: absolute;
     top: 50px;
@@ -166,4 +161,56 @@ footer a {
 
 footer a:hover {
     color: #923111ff;
+}
+
+@media (max-width: 900px) {
+    #banner {
+        padding: 1rem;
+    }
+
+    #cat,
+    #layingcat {
+        top: 1rem;
+        width: clamp(80px, 15vw, 120px);
+    }
+
+    main {
+        padding: 1rem;
+        gap: 1rem;
+        border-width: 0.8em;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        background-size: auto 150%;
+    }
+
+    #banner {
+        padding: 1rem 0.75rem 1.5rem;
+    }
+
+    #banner h1,
+    #banner h2 {
+        padding: 0.75rem 0.85rem;
+    }
+
+    #cat,
+    #layingcat {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 0.5rem auto 0;
+        animation: none;
+    }
+
+    main {
+        border-width: 0.6em;
+    }
+
+    section {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
