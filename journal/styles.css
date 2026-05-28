@@ -5,8 +5,11 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    max-width: 800px;
+    /* max-width: 900px; */
+    min-height: 100vh;
+    width: 100%;
 }
 
 .layout {
@@ -14,7 +17,9 @@ body {
     margin: 4em auto;
     padding: 0 2em;
     display: grid;
-    min-width: auto;
+    place-items: center;
+    max-width: 800px;
+    width: 100%;
 }
 
 .journals {
@@ -27,8 +32,9 @@ body {
 .card {
     background: #ffffff;
     padding: 1.5em;
-    border-radius: 1em;
-    /* box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2); */
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
     margin-top: 10px;
 }
 
@@ -51,7 +57,7 @@ body {
     font-family: inherit;
     margin-bottom: 1em;
     text-decoration: none;
-    color: lightblue;
+    color: orange;
 }
 
 p {
