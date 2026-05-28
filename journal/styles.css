@@ -1,7 +1,7 @@
 body {
     font-family: "DM Sans", sans-serif;
     color: #202020;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -30,10 +30,10 @@ body {
 }
 
 .card {
-    background: #ffffff;
+    background: white;
     padding: 1.5em;
     border-radius: 0;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 2px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
     margin-top: 10px;
 }
@@ -42,15 +42,15 @@ body {
     font-family: inherit;
     font-size: 1.4rem;
     margin-bottom: 1.2em;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .card date {
     font-family: inherit;
     font-size: 1.1 rem;
-    color: black;
+    color: 202020;
     margin-bottom: 3em;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .card a {
