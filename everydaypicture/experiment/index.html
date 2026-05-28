@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everyday Picture</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -18,12 +20,13 @@
 
     </p>
 
-    <img class="sketch" src="images/everyday-sketch.jpg" alt="sketch" width="400">
+    <div id="container">
+        <img id="myimage" src="images/everyday-1.jpg" alt="image1" width="400">
+    </div>
 
-    <img class="image" src="images/everyday-1.jpg" alt="photo" width="400">
-
-    <img class="image" src="images/everyday-1.jpg" alt="photo2" width="400">
-
+    <div>
+        <button id="previous">previous</button> <button id="next">next</button>
+    </div>
 
 </body>
 

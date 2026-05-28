@@ -1,30 +1,32 @@
 (function () {
     "use strict";
-    console.log("reading js");
 
-    const sketch = document.getElementById("sketch");
-    const items = document.querySelectorAll(".item");
+    console.log('reading JS');
 
-    let itemsOut = 0;
-    const itemList = ["ball", "sauce", "svt", "mahjong"];
+    const images = ['everyday-1.jpg', 'apartment.jpeg', 'moped.jpeg', 'street.jpeg'];
 
-    let isAnimating = false;
+    let currentImage = 0;
 
-    bag.addEventListener("click", function () {
-        if (isAnimating) return;
-        isAnimating = true;
+    const slide = document.querySelector('#myimage');
 
-        setTimeout(() => {
-            isAnimating = false;
-        }, 650);
+    document.querySelector('#next').addEventListener('click', nextPhoto);
+    document.querySelector('#previous').addEventListener('click', previousPhoto);
 
-        if (itemsOut === itemList.length) {
-            items.forEach((item) => item.classList.remove("revealed"));
-            itemsOut = 0;
-        } else {
-            const nextItem = document.querySelector("." + itemList[itemsOut]);
-            nextItem.classList.add("revealed");
-            itemsOut++;
+    function nextPhoto() {
+        currentImage++;
+        if (currentImage > images.length - 1) {
+            currentImage = 0;
         }
-    });
+        slide.src = `images/${images[currentImage]}`;
+    }
+
+    function previousPhoto() {
+        currentImage--;
+
+        if (currentImage < 0) {
+            currentImage = images.length - 1;
+        }
+        slide.src = `images/${images[currentImage]}`;
+    }
+
 })();
