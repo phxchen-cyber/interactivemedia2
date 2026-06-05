@@ -1,0 +1,162 @@
+body {
+    font-family: "Rampart One", sans-serif;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("images/game-on-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* game layout */
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-header h1 {
+    font-size: 4rem;
+}
+
+.header-box {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 700;
+    background: white;
+    border: 1.5px solid #333333;
+    gap: 20px;
+
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.player-column {
+    opacity: 0.35;
+    transition: opacity 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.player-column.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.score-card {
+    background: #fff;
+    padding: 30px;
+    border: black solid 1.5px;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 60%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.score-val {
+    font-size: 2.8rem;
+    margin: 0;
+    text-align: left;
+}
+
+.fish-val {
+    font-size: 1.8rem;
+    color: #5484a5;
+    margin: 0;
+    text-align: right;
+}
+
+/* middle column */
+.middle-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0%;
+}
+
+.seal-img {
+    width: 100%;
+    max-width: 400px;
+    z-index: -10;
+}
+
+/* dice area */
+.dice-area {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+}
+
+.dice-placeholder {
+    font-size: 0.95rem;
+    color: #999;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.die-img {
+    width: 70px;
+    height: 70px;
+    border: 1.5px solid black;
+}
+
+/* action buttons */
+.button-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10%;
+}
+
+.action-btn {
+    width: 200px;
+    padding: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1.5px solid #333333;
+    font-family: "DotGothic16", sans-serif;
+    font-size: 1rem;
+}
+
+.roll {
+    color: black;
+    background-color: #fff;
+}
+
+.roll:hover {
+    background: #5484a5;
+}
+
+.stop {
+    background: #ffffff;
+}
+
+.restart {
+    /* background: #2ecc71; */
+    background-color: white;
+    color: black;
+}

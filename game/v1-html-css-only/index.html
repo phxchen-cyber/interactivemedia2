@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed da Seal</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Rampart+One&family=Rock+3D&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- game layout -->
+    <header class="game-header">
+        <div class="header-left-group">
+            <div id="turn-indicator" class="header-box">Turn: Player 1</div>
+        </div>
+
+        <h1>Feed da Seal</h1>
+
+        <div class="header-right-group">
+            <button class="header-box" id="ingame-rules">Get to 30!</button>
+        </div>
+    </header>
+
+    <main class="game-container">
+        <!-- player 1 -->
+        <div class="player-column p1-side">
+            <div class="score-card">
+                <p class="label">Total Score</p>
+                <h2 id="p1-total" class="score-val">0</h2>
+                <p class="label">Fish Nommed</p>
+                <h2 id="p1-fish" class="fish-val">0</h2>
+            </div>
+        </div>
+
+        <!-- seal, dice, buttons -->
+        <div class="middle-column">
+            <img class="seal-img" src="images/seal.svg" alt="seal">
+
+            <!-- dice area -->
+            <div class="dice-area">
+                <img id="die1-img" class="die-img hidden" alt="die 1">
+                <img id="die2-img" class="die-img hidden" alt="die 2">
+            </div>
+
+            <div class="button-stack">
+                <button id="roll-btn" class="action-btn roll">Roll</button>
+                <button id="stop-btn" class="action-btn stop">End Turn</button>
+            </div>
+        </div>
+
+        <!-- player 2 -->
+        <div class="player-column p2-side">
+            <div class="score-card">
+                <p class="label">Total Score</p>
+                <h2 id="p2-total" class="score-val">0</h2>
+                <p class="label">Fish Nommed</p>
+                <h2 id="p2-fish" class="fish-val">0</h2>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
