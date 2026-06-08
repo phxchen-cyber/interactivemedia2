@@ -4,7 +4,7 @@
 
     // constants
     const winScore = 30;
-    const dieFaces = 6;
+    const diceFaces = 6;
 
     const die = {
         1: "images/1.svg",
@@ -20,17 +20,16 @@
     const sfxShake = new Audio("audio/shake.mp3");
 
     // dom refs
-    const turnIndicator = document.getElementById("turn-indicator");
-    const rollBtn = document.getElementById("roll-btn");
-    const stopBtn = document.getElementById("stop-btn");
-    const rulesBtn = document.getElementById("ingame-rules-btn");
-    const die1Img = document.getElementById("die1-img");
-    const die2Img = document.getElementById("die2-img");
+    const turnIndicator = document.querySelector("#turn-indicator");
+    const rollBtn = document.querySelector("#roll-btn");
+    const stopBtn = document.querySelector("#stop-btn");
+    const die1Img = document.querySelector("#die1-img");
+    const die2Img = document.querySelector("#die2-img");
 
-    const p1Total = document.getElementById("p1-total");
-    const p1Fish = document.getElementById("p1-fish");
-    const p2Total = document.getElementById("p2-total");
-    const p2Fish = document.getElementById("p2-fish");
+    const p1Total = document.querySelector("#p1-total");
+    const p1Fish = document.querySelector("#p1-fish");
+    const p2Total = document.querySelector("#p2-total");
+    const p2Fish = document.querySelector("#p2-fish");
 
     const p1Col = document.querySelector(".p1-side");
     const p2Col = document.querySelector(".p2-side");
@@ -43,7 +42,7 @@
 
     // main dice logic
     function roll() {
-        return Math.floor(Math.random() * dieFaces) + 1;
+        return Math.floor(Math.random() * diceFaces) + 1;
     }
 
     function showDie(imgEl, value) {

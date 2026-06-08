@@ -34,13 +34,34 @@
     </header>
 
     <main class="game-container">
-        <!-- player 1 -->
-        <div class="player-column p1-side">
-            <div class="score-card">
-                <p class="label">Total Score</p>
-                <h2 id="p1-total" class="score-val">0</h2>
-                <p class="label">Fish Nommed</p>
-                <h2 id="p1-fish" class="fish-val">0</h2>
+
+        <!-- p1 left, middle center, p2 right in desktop grid -->
+        <!-- scores-row wraps p1 and p2 for mobile -->
+        <div class="scores-row">
+            <div class="player-column p1-side">
+                <div class="score-card">
+                    <div class="stat-group">
+                        <p class="label">Total Score</p>
+                        <h2 id="p1-total" class="score-val">0</h2>
+                    </div>
+                    <div class="stat-group stat-right">
+                        <p class="label">Fish Nommed</p>
+                        <h2 id="p1-fish" class="fish-val">0</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player-column p2-side">
+                <div class="score-card">
+                    <div class="stat-group">
+                        <p class="label">Total Score</p>
+                        <h2 id="p2-total" class="score-val">0</h2>
+                    </div>
+                    <div class="stat-group stat-right">
+                        <p class="label">Fish Nommed</p>
+                        <h2 id="p2-fish" class="fish-val">0</h2>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -48,7 +69,6 @@
         <div class="middle-column">
             <img class="seal-img" src="images/seal.svg" alt="seal">
 
-            <!-- dice area -->
             <div class="dice-area">
                 <img id="die1-img" src="images/1.svg" class="die-img hidden" alt="die 1">
                 <img id="die2-img" src="images/2.svg" class="die-img hidden" alt="die 2">
@@ -60,15 +80,6 @@
             </div>
         </div>
 
-        <!-- player 2 -->
-        <div class="player-column p2-side">
-            <div class="score-card">
-                <p class="label">Total Score</p>
-                <h2 id="p2-total" class="score-val">0</h2>
-                <p class="label">Fish Nommed</p>
-                <h2 id="p2-fish" class="fish-val">0</h2>
-            </div>
-        </div>
     </main>
 
 
