@@ -1,216 +1,276 @@
-/* CSS HEX
---muted-teal: #75957cff;
---ink-black: #0d1321ff;
---papaya-whip: #fef1d7ff;
---brandy: #923111ff;
---dark-emerald: #00663aff; */
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+ }
 
-/* fonts
-DM Serif Display
-DM Serif Text
-Roboto Mono */
+ body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+ }
 
+ body {
+     background-color: #75957c;
+     background-repeat: round;
+     color: #0d1321;
+     font-family: "Roboto Mono", monospace;
+     display: flex;
+     flex-direction: column;
+     height: 100dvh;
+ }
 
-body {
-    background-color: #75957cff;
-    color: #0d1321ff;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    background-image: url("images/background-rounded.jpg");
-    background-repeat: round;
-    max-height: 750px;
-}
+ .spacer {
+     flex: 2 1 0;
+ }
 
-#container {
-    max-width: 1200px;
-    height: 750px;
-    min-width: 800px;
-    margin: auto;
-}
+ .spacer2 {
+     flex: 1 1 0;
+ }
 
-#banner {
-    max-width: 1200px;
-    height: 250px;
-    text-align: center;
-    margin: auto;
-    padding-top: 20px;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    margin: auto;
-    position: relative;
-}
+ /* header */
+ header {
+     flex: 0 0 auto;
+     padding: 0 5rem;
+ }
 
-#banner h1 {
-    background-color: #fef1d7ff;
-}
+ #banner {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 0.9rem 10rem;
+     text-align: center;
+ }
 
-#banner h2 {
-    background-color: #fef1d7ff;
+ #banner h1 {
+     font-family: "DM Serif Display", serif;
+     font-size: clamp(1.6rem, 3vw, 2.4rem);
+     font-weight: 400;
+     margin: 0;
+     padding: 0.15em 0.7em;
+     background-color: #fef1d7;
+     display: inline-block;
+     line-height: 1.2;
+ }
 
-}
+ #banner h2 {
+     font-family: "DM Serif Display", serif;
+     font-size: clamp(0.7rem, 1.2vw, 0.95rem);
+     font-weight: 400;
+     letter-spacing: 0.05em;
+     margin: 0.3rem 0 0;
+     padding: 0.25em 1em;
+     background-color: #fef1d7;
+     display: inline-block;
+     color: #0d1321;
+ }
 
-#cat {
-    position: absolute;
-    top: 50px;
-    right: 3em;
-    animation: rotate 3.5s ease-in-out infinite alternate;
-}
+ #cat {
+     position: absolute;
+     right: 2rem;
+     top: 50%;
+     transform: translateY(-50%);
+     animation: sway 3.5s ease-in-out infinite alternate;
+ }
 
-#layingcat {
-    position: absolute;
-    top: 50px;
-    left: 3em;
-}
+ #layingcat {
+     position: absolute;
+     left: 2rem;
+     top: 50%;
+     transform: translateY(-50%);
+ }
 
-@keyframes rotate {
-    from {
-        transform: rotate(-10deg);
-    }
+ #cat img,
+ #layingcat img {
+     width: clamp(70px, 8vw, 110px);
+     height: auto;
+     display: block;
+ }
 
-    to {
-        transform: rotate(10deg);
-    }
-}
+ @keyframes sway {
+     from {
+         transform: translateY(-50%) rotate(-8deg);
+     }
 
-#subheading {
-    max-width: 1200px;
-    height: 250px;
-    position: relative;
-}
+     to {
+         transform: translateY(-50%) rotate(8deg);
+     }
+ }
 
-#subheading h2 {
-    font-size: 30px;
-    color: #0d1321ff;
-}
+ /* divider */
+ .rule {
+     flex: 0 0 auto;
+     height: 3px;
+     background: #fef1d7;
+     margin: 0 5rem;
+     border-radius: 2px;
+ }
 
-main {
-    display: flex;
-    background-color: #fef1d7ff;
-    justify-self: center;
-    gap: 60px;
-    padding: 40px;
-    width: 900px;
-    border-style: double;
-    border-width: 1em;
-    border-color: orange;
-    border-radius: 2em;
-}
+ /* main nav */
+ main {
+     flex: 0 0 auto;
+     display: flex;
+     gap: 0;
+     padding: 2rem 5rem 3rem;
+     overflow: hidden;
+     align-items: stretch;
+     justify-content: center;
+ }
 
-main ul li {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 10px;
-    background-color: whitesmoke;
-    line-height: 1.5em;
-}
+ section {
+     flex: 0 0 auto;
+     width: 240px;
+     background: #fef1d7;
+     display: flex;
+     flex-direction: column;
+     border-left: 4px solid #00663a;
+     padding: 0;
+     position: relative;
+     transition: border-color 0.25s;
+ }
 
-main ul {
-    padding-left: 0;
-}
+ section:not(:last-child) {
+     margin-right: 1.1rem;
+ }
 
-main h2 {
-    font-size: 20px;
-    font-weight: 600;
-}
+ section:hover {
+     border-color: #923111;
+ }
 
-section h3 {
-    color: #00663aff;
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-}
+ .section-tab {
+     font-family: "DM Serif Text", serif;
+     font-size: clamp(0.9rem, 1.3vw, 1.2rem);
+     color: #00663a;
+     background: transparent;
+     padding: 0.7rem 0.9rem 0.4rem;
+     flex: 0 0 auto;
+     letter-spacing: 0.04em;
+     transition: color 0.25s;
+     border-bottom: 1px solid rgba(0, 102, 58, 0.2);
+ }
 
-section ul li a {
-    color: #923111ff;
-}
+ section:hover .section-tab {
+     color: #923111;
+ }
 
-main ul li a {
-    text-decoration: underline 0.15em transparent;
-    text-underline-offset: 0.2em;
-    transition: text-decoration-color 300ms, text-underline-offset 300ms;
-}
+ section ul {
+     list-style: none;
+     margin: 0;
+     padding: 0.5rem 0.75rem 0.75rem 0.5rem;
+     flex: 0 0 auto;
+     display: flex;
+     flex-direction: column;
+     gap: 0.1rem;
+ }
 
-main ul li a:hover {
-    text-decoration-color: #923111ff;
-    text-underline-offset: 0.4em;
-}
+ section ul li {
+     padding: 0;
+ }
 
-footer {
-    margin-top: auto;
-    padding: 0;
-    color: #0d1321ff;
-    background-color: #fef1d7ff;
-    width: fit-content;
-}
+ section ul li a {
+     display: block;
+     font-family: "Roboto Mono", monospace;
+     font-size: clamp(0.7rem, 0.95vw, 0.88rem);
+     font-weight: 300;
+     color: #923111;
+     text-decoration: none;
+     padding: 0.35em 0.5em;
+     border-bottom: 1px solid transparent;
+     transition: border-color 0.2s, background 0.2s, padding-left 0.2s;
+     line-height: 1.5;
+ }
 
-footer p {
-    padding: 1em;
-    text-align: center;
-    text-decoration: none;
-    color: #0d1321ff;
-}
+ section ul li a:hover {
+     border-bottom-color: #923111;
+     background: rgba(146, 49, 17, 0.06);
+     padding-left: 0.9em;
+ }
 
-footer a {
-    text-decoration: none;
-    color: #0d1321ff;
-}
+ /* footer */
+ footer {
+     flex: 0 0 auto;
+     padding: 0 5rem 1.5rem;
+     display: flex;
+     justify-content: center;
+ }
 
-footer a:hover {
-    color: #923111ff;
-}
+ footer p {
+     display: inline-block;
+     margin: 0;
+     font-size: 0.7rem;
+     font-family: "Roboto Mono", monospace;
+     background: #fef1d7;
+     padding: 0.3em 0.8em;
+     color: #0d1321;
+ }
 
-@media (max-width: 900px) {
-    #banner {
-        padding: 1rem;
-    }
+ footer a {
+     color: #923111;
+     text-decoration: none;
+     margin-left: 0.4em;
+ }
 
-    #cat,
-    #layingcat {
-        top: 1rem;
-        width: clamp(80px, 15vw, 120px);
-    }
+ footer a:hover {
+     text-decoration: underline;
+ }
 
-    main {
-        padding: 1rem;
-        gap: 1rem;
-        border-width: 0.8em;
-    }
-}
+ /* mobile */
+ @media (max-width: 720px) {
 
-@media (max-width: 640px) {
-    body {
-        background-size: auto 150%;
-    }
+     body {
+         height: auto;
+         overflow: auto;
+     }
 
-    #banner {
-        padding: 1rem 0.75rem 1.5rem;
-    }
+     body {
+         height: auto;
+         min-height: 100dvh;
+     }
 
-    #banner h1,
-    #banner h2 {
-        padding: 0.75rem 0.85rem;
-    }
+     .spacer,
+     .spacer2 {
+         display: none;
+     }
 
-    #cat,
-    #layingcat {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        margin: 0.5rem auto 0;
-        animation: none;
-    }
+     #cat,
+     #layingcat {
+         display: none;
+     }
 
-    main {
-        border-width: 0.6em;
-    }
+     header {
+         padding: 0 1.5rem;
+         margin-top: 2rem;
+     }
 
-    section {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
+     #banner {
+         padding: 0.75rem 1rem;
+     }
+
+     .rule {
+         margin: 0 1.5rem;
+     }
+
+     main {
+         flex-direction: column;
+         align-items: center;
+         padding: 1.5rem 1.5rem 2rem;
+         overflow: visible;
+     }
+
+     section {
+         width: 100%;
+         max-width: 400px;
+     }
+
+     section:not(:last-child) {
+         margin-right: 0;
+         margin-bottom: 1rem;
+     }
+
+     footer {
+         padding: 1rem 1.5rem 2rem;
+     }
+ }
