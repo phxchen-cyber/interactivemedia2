@@ -1,0 +1,66 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #202020;
+    background-color: whitesmoke;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 900px; */
+    min-height: 100vh;
+    width: 100%;
+}
+
+.layout {
+    position: relative;
+    margin: 4em auto;
+    padding: 0 2em;
+    display: grid;
+    place-items: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.journals {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5em;
+    border-radius: 0;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+    margin-top: 10px;
+}
+
+.card h2 {
+    font-family: inherit;
+    font-size: 1.4rem;
+    margin-bottom: 1.2em;
+}
+
+.card a {
+    font-family: inherit;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: orange;
+}
+
+p {
+    margin: inherit;
+}
+
+.card a:hover {
+    color: lightblue;
+}
+
+.no-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

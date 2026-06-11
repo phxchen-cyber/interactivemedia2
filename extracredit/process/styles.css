@@ -45,14 +45,6 @@ body {
     margin-left: 5px;
 }
 
-.card date {
-    font-family: inherit;
-    font-size: 1.1 rem;
-    color: 202020;
-    margin-bottom: 3em;
-    margin-left: 5px;
-}
-
 .card a {
     font-family: inherit;
     margin-bottom: 1em;
@@ -72,20 +64,4 @@ p {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-footer {
-    text-align: center;
-    margin: 2em auto;
-    border-radius: 1.5em 1.5em 0 0;
-    max-width: 1200px;
-}
-
-footer a {
-    color: darkgrey;
-    text-decoration: none;
-}
-
-footer p {
-    color: darkgray;
 }
