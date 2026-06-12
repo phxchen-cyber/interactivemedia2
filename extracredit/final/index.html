@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories Past</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="layout">
+
+        <header class="hero">
+            <h1>Memories Past</h1>
+            <p>These photos are a small recollection of my days in southern China and I’m excited to take more this
+                summer!</p>
+        </header>
+
+        <div class="camera-section">
+            <div class="photo-stack" id="photo-stack"></div>
+
+            <div class="click-hint" id="click-hint">
+                <span>[ click to start ]</span>
+            </div>
+
+            <div class="frame-counter" id="frame-counter">0 / 4</div>
+
+            <div id="end-overlay" class="end-overlay">
+                <p class="end-title">No Storage Available</p>
+                <p class="end-reflection">Seems like there's no more space for memories here. Transfer to an SSD later?
+                </p>
+                <button id="reset-btn">Shut Down</button>
+            </div>
+
+            <img class="camera" src="images/camera.png" alt="camera">
+
+        </div>
+
+    </main>
+</body>
+
+</html>
